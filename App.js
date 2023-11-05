@@ -14,6 +14,7 @@ export default function App() {
     await Font.loadAsync({
       'Raleway-Medium': require('./assets/fonts/Raleway-Medium.ttf'),
       'Raleway-Bold': require('./assets/fonts/Raleway-Bold.ttf'),
+      'Raleway-SemiBold': require('./assets/fonts/Raleway-SemiBold.ttf'),
     });
 
     const [IsReady, SetIsReady] = useState(false);

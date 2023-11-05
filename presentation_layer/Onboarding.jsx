@@ -13,6 +13,10 @@ export default function Onboarding({ navigation }) {
     pager.current;
   }
 
+  const goToLogin = () => {
+    navigation.replace('Login');
+  }
+
   return (
     
     <PagerView initialPage={1} style={tw.style('flex-1 mt-8 my-20')} ref={pager}>
@@ -145,16 +149,12 @@ export default function Onboarding({ navigation }) {
           {/* <View style={tw.style('flex basis-1/6')}></View> */}
 
           <View style={tw.style('flex basis-1/8 items-center justify-between')}>
-              <TouchableOpacity style={tw.style('bg-[#555FD2] px-12 py-3')}>
+              <TouchableOpacity style={tw.style('bg-[#555FD2] px-12 py-3')} onPress={goToLogin}>
                 <Text style={tw.style('text-white text-[20px]', {
                 fontFamily : "Raleway-Bold"
-              })}>Next</Text>
+              })}>Start</Text>
               </TouchableOpacity>
-              <TouchableOpacity>
-                <Text style={tw.style('text-[#8C8FA5] text-[15px]', {
-                fontFamily : "Raleway-Bold"
-              })}>Skip for now</Text>
-              </TouchableOpacity>  
+              
           </View>
       </View>
 
