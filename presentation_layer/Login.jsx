@@ -7,7 +7,10 @@ import Line from '../assets/Line.svg';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Checkbox from 'expo-checkbox';
 
-export default function Login() {
+export default function Login({ navigation }) {
+    const goToForgetPassword = () => {
+        navigation.push('ForgetPassword');
+      }
   return (
     <KeyboardAvoidingView style={tw.style('flex-1 flex justify-center bg-white')} behavior="padding">
         <Header width="100%" style={tw.style('w-full flex justify-center z-10 absolute top-0')} >
@@ -75,7 +78,7 @@ export default function Login() {
                     fontFamily : "Raleway-Medium"
                     })}>Remember me</Text>
                     </View>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={goToForgetPassword}>
                         <Text style={tw.style('text-[#555FD2] text-[12px]' , {
                         fontFamily : "Raleway-Medium"
                         })}>Forget password?</Text>
