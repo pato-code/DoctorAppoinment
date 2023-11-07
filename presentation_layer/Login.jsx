@@ -9,7 +9,7 @@ import Checkbox from 'expo-checkbox';
 
 export default function Login({ navigation }) {
     const goToForgetPassword = () => {
-        navigation.push('ForgetPassword');
+        navigation.push('EmailVerfication');
       }
   return (
     <KeyboardAvoidingView style={tw.style('flex-1 flex justify-center bg-white')} behavior="padding">
