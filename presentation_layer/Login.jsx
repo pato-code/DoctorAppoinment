@@ -11,6 +11,9 @@ export default function Login({ navigation }) {
     const goToForgetPassword = () => {
         navigation.push('ResetPassword');
       }
+      const goToSignUp = () => {
+        navigation.push('SignUp');
+      }
   return (
     <KeyboardAvoidingView style={tw.style('flex-1 flex justify-center bg-white')} behavior="padding">
         <Header width="100%" style={tw.style('w-full flex justify-center z-10 absolute top-0')} >
@@ -128,7 +131,7 @@ export default function Login({ navigation }) {
                     }) }>
                     Don’t have an account?
                 </Text>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={goToSignUp}>
                     <Text style={tw.style('text-white text-[15px]' , {
                     fontFamily : "Raleway-SemiBold"
                     }) }>

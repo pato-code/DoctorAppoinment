@@ -7,6 +7,8 @@ import Login from '../presentation_layer/Login';
 import ForgetPassword from '../presentation_layer/ForgetPassword';
 import EmailVerfication from '../presentation_layer/EmailVerfication';
 import ResetPassword from '../presentation_layer/ResetPassword';
+import SignUp from '../presentation_layer/SignUp';
+
 
 
 
@@ -24,6 +26,8 @@ export default function BasicRoute() {
             <Stack.Screen name="ForgetPassword" component={ForgetPassword} />
             <Stack.Screen name="EmailVerfication" component={EmailVerfication} />
             <Stack.Screen name="ResetPassword" component={ResetPassword} />
+            <Stack.Screen name="SignUp" component={SignUp} />
+
 
 
 
