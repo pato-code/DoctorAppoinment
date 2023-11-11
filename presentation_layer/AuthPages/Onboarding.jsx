@@ -2,11 +2,12 @@ import React , {  useRef} from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import PagerView from 'react-native-pager-view';
 import tw from 'twrnc';
-import Onbarding1 from '../assets/onboarding-1.svg';
-import Onbarding2 from '../assets/onboarding-2.svg';
-import Onbarding3 from '../assets/onboarding-3.svg';
+import Onbarding1 from '../../assets/onboarding-1.svg';
+import Onbarding2 from '../../assets/onboarding-2.svg';
+import Onbarding3 from '../../assets/onboarding-3.svg';
 
 export default function Onboarding({ navigation }) {
+  console.log('show onboarding page');
   
   const pager = useRef();
   const goToPage = (page) => {
@@ -19,12 +20,12 @@ export default function Onboarding({ navigation }) {
 
   return (
     
-    <PagerView initialPage={1} style={tw.style('flex-1 mt-8 my-20')} ref={pager}>
+    <PagerView initialPage={0} style={tw.style('flex-1 mt-8 my-20')} ref={pager}>
       
       {/*
           Here is the First Page
       */}
-      <View style={tw.style('px-12 py-10 flex justify-between items-center ')} key={1}>
+      <View style={tw.style('px-12 py-10 flex justify-between items-center ')} key={0}>
           <View style={tw.style('basis-6/8 flex justify-between items-center mb-20')} >
               <Onbarding1  />
               <View>

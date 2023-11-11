@@ -1,9 +1,8 @@
 import React from 'react';
 import { View, Text, TouchableOpacity , TextInput , KeyboardAvoidingView } from 'react-native';
 import tw from 'twrnc';
-import Header from '../assets/login-header.svg';
-import Footer from '../assets/login-footer.svg';
-import OTPTextView from 'react-native-otp-textinput';
+import Header from '../../assets/login-header.svg';
+import Footer from '../../assets/login-footer.svg';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 
@@ -13,7 +12,7 @@ export default function SignUp({ navigation }) {
       }  
   return (
     <KeyboardAvoidingView style={tw.style('flex-1 flex justify-center bg-white')} behavior="padding">
-        <Header width="100%" style={tw.style('w-full flex justify-center z-10 absolute top-0')} >
+        <Header width="100%" style={tw.style('w-full flex justify-center z-10 absolute top--4')} >
                 
         </Header>
         

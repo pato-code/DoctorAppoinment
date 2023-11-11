@@ -1,9 +1,9 @@
 import React from 'react';
 import { View, Text, TouchableOpacity , TextInput , KeyboardAvoidingView } from 'react-native';
 import tw from 'twrnc';
-import Header from '../assets/login-header.svg';
-import Footer from '../assets/login-footer.svg';
-import Line from '../assets/Line.svg';
+import Header from '../../assets/login-header.svg';
+import Footer from '../../assets/login-footer.svg';
+import Line from '../../assets/Line.svg';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Checkbox from 'expo-checkbox';
 
@@ -14,9 +14,14 @@ export default function Login({ navigation }) {
       const goToSignUp = () => {
         navigation.push('SignUp');
       }
+      const goToHome = () => {
+        navigation.navigate('Home' , {
+            screen: 'HomePage'
+        });
+      }
   return (
-    <KeyboardAvoidingView style={tw.style('flex-1 flex justify-center bg-white')} behavior="padding">
-        <Header width="100%" style={tw.style('w-full flex justify-center z-10 absolute top-0')} >
+    <KeyboardAvoidingView style={tw.style('flex-1  flex justify-center bg-white')} behavior="padding">
+        <Header width="100%" style={tw.style('w-full flex justify-center z-10 absolute top--4')} >
                 
         </Header>
         <Text style={tw.style('text-white text-[15px] z-20 absolute top-14 self-center' , {
@@ -88,7 +93,7 @@ export default function Login({ navigation }) {
                     </TouchableOpacity>
                 </View>
 
-                <TouchableOpacity style={tw.style('mx-14 h-[45px] flex w=full justify-center items-center bg-[#555FD2] rounded-lg')}>
+                <TouchableOpacity style={tw.style('mx-14 h-[45px] flex  justify-center items-center bg-[#555FD2] rounded-lg')} onPress={goToHome}>
                         <Text style={tw.style('text-white text-[20px]' , {
                     fontFamily : "Raleway-Bold"
                     } )}>Sign In</Text>
