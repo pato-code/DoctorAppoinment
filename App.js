@@ -24,6 +24,7 @@ export default function App() {
           'Raleway-Medium': require('./assets/fonts/Raleway-Medium.ttf'),
           'Raleway-Bold': require('./assets/fonts/Raleway-Bold.ttf'),
           'Raleway-SemiBold': require('./assets/fonts/Raleway-SemiBold.ttf'),
+          'Roboto-Bold': require('./assets/fonts/Roboto-Bold.ttf'),
           'Roboto-Medium': require('./assets/fonts/Roboto-Medium.ttf'),
           'Roboto-Regular': require('./assets/fonts/Roboto-Regular.ttf'),
         });
